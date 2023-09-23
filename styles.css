@@ -269,8 +269,14 @@ nav {
 	font-weight: 400;
 }
 
+.large-title {
+	font-size: 80px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	line-height: 1;
+}
+
 .extra-large-title {
-	padding-bottom: 80px;
 	font-size: 160px;
 	font-weight: 800;
 	letter-spacing: -6px;
@@ -284,6 +290,10 @@ nav {
 		font-size: 120px;
 		letter-spacing: -2px;
 	}
+}
+
+.margin-bottom--80 {
+	margin-bottom: 80px;
 }
 
 .project-card {
@@ -380,6 +390,10 @@ nav {
 	margin-bottom: 128px;
 }
 
+.example-container {
+	margin-bottom: 80px;
+}
+
 .portfolio-example {
 	margin-bottom: 24px;
 	border: 4px solid var(--black);
@@ -412,4 +426,19 @@ nav {
 	border: 4px solid var(--black);
 	font-size: 12px;
 	box-shadow: 0px 1px 20px -9px rgba(61,61,61,0.24);
+}
+
+.copy-columns {
+	column-count: 2;
+	column-gap: 24px;
+}
+
+.tldr {
+	margin: 80px 0 24px;
+	font-size: 48px;
+}
+
+.tldr-copy {
+	margin-bottom: 160px;
+	max-width: 50%;
 }
