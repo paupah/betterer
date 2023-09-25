@@ -17,3 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const hamburgerMenu = document.querySelector(".hamburger-button");
+	const navLinks = document.querySelector(".mobile-link-drawer");
+  
+	hamburgerMenu.addEventListener("click", function () {
+	  // Toggle the visibility of the navigation links
+	  if (navLinks.style.display === "flex") {
+		navLinks.style.display = "none";
+	  } else {
+		navLinks.style.display = "flex";
+	  }
+	});
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+	const mobileButton = document.querySelector(".close");
+	const navLinks = document.querySelector(".mobile-link-drawer");
+  
+	mobileButton.addEventListener("click", function () {
+	//   close mobile nav drawer
+		navLinks.style.display = "none";
+	});
+  });
