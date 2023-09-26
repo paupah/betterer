@@ -2,6 +2,16 @@
 	--black: #3d3d3d;
 	--white: #ede8da;
 	--box-shadow: 0px 7px 10px -3px rgba(61,61,61,0.3);
+	--x-large-font: 80px;
+	--large-font: 48px;
+	--medium-font: 24px;
+	--small-font: 16px;
+
+	@media screen and (max-width: 768px) {
+		--x-large-font: 48px;
+		--large-font: 32px;
+		--medium-font: 20px;
+	}
 }
 
 * {
@@ -314,11 +324,6 @@ nav {
 	}
 }
 
-.section-title {
-	margin-bottom: 16px;
-	font-size: 48px;
-}
-
 .copy-container {
 	max-width: 700px;
 }
@@ -375,19 +380,7 @@ nav {
 	}
 }
 
-.large-title {
-	font-size: 80px;
-	font-weight: 800;
-	letter-spacing: -2px;
-	line-height: 1;
-
-	@media screen and (max-width: 768px) {
-		font-size: 48px;
-		letter-spacing: -2px;
-	}
-}
-
-.extra-large-title {
+.xx-large-title {
 	font-size: 160px;
 	font-weight: 800;
 	letter-spacing: -6px;
@@ -398,6 +391,28 @@ nav {
 		letter-spacing: -2px;
 	}
 }
+
+.x-large-title {
+	font-size: var(--x-large-font);
+	font-weight: 800;
+	letter-spacing: -2px;
+	line-height: 1;
+
+	@media screen and (max-width: 768px) {
+		letter-spacing: -2px;
+	}
+}
+
+.large-title {
+	margin-bottom: 16px;
+	font-size: var(--large-font);
+}
+
+.medium-title {
+	margin-bottom: 16px;
+	font-size: var(--medium-font);
+}
+
 
 .margin-bottom--24 {
 	margin-bottom: 24px;
