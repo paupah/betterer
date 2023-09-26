@@ -205,6 +205,10 @@ nav {
 	margin-left: 24px;
 }
 
+.hero-section {
+	padding-top: 80px;
+}
+
 .hero_copy-container {
 	line-height: 1;
 }
@@ -234,16 +238,21 @@ nav {
 .full-width-copy--m {
 	font-size: 6.8vw;
 	letter-spacing: -2px;
-
-	@media screen and (max-width: 768px) {
-		font-size: 7.8vw;
-	}
 }
 
 .full-width-copy--s {
 	font-size: 2.4vw;
 	font-weight: 600;
 	line-height: 2;
+
+	@media screen and (max-width: 1200px) {
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		line-height: 1.4;
+	}
 }
 
 .section-break {
@@ -344,12 +353,25 @@ nav {
 	font-size: 96px;
 	line-height: 1;
 	font-weight: 500;
+
+	@media screen and (max-width: 768px) {
+		font-size: 48px;
+	}
 }
 
 .card-title {
 	padding: 48px 0 24px;
 	font-size: 48px;
 	font-weight: 400;
+
+	@media screen and (max-width: 1200px) {
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 24px 0;
+		font-size: 24px;
+	}
 }
 
 .large-title {
@@ -357,6 +379,11 @@ nav {
 	font-weight: 800;
 	letter-spacing: -2px;
 	line-height: 1;
+
+	@media screen and (max-width: 768px) {
+		font-size: 48px;
+		letter-spacing: -2px;
+	}
 }
 
 .extra-large-title {
@@ -366,7 +393,7 @@ nav {
 	line-height: 1;
 
 	@media screen and (max-width: 768px) {
-		font-size: 120px;
+		font-size: 64px;
 		letter-spacing: -2px;
 	}
 }
@@ -498,6 +525,7 @@ nav {
 .company-logo {
 	margin-bottom: 24px;
 	height: 48px;
+	width: 100%;
 	max-width: 300px;
 }
 
@@ -608,6 +636,10 @@ nav {
 	@media screen and (max-width: 1200px) {
 		padding: 24px
 	}
+
+	@media screen and (max-width: 768px) {
+		padding: 16px;
+	}
 }
 
 .tech-item img {
@@ -617,6 +649,11 @@ nav {
 	@media screen and (max-width: 1200px) {
 		max-height: 40px;
 		max-width: 80px;
+	}
+
+	@media screen and (max-width: 768px) {
+		max-height: 40px;
+		max-width: 64px;
 	}
 }
 
