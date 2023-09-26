@@ -400,10 +400,18 @@ nav {
 
 .margin-bottom--24 {
 	margin-bottom: 24px;
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 16px;
+	}
 }
 
 .margin-bottom--80 {
 	margin-bottom: 80px;
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 48px;
+	}
 }
 
 .project-card {
@@ -525,7 +533,6 @@ nav {
 .company-logo {
 	margin-bottom: 24px;
 	height: 48px;
-	width: 100%;
 	max-width: 300px;
 }
 
@@ -558,6 +565,11 @@ nav {
 .tldr-copy {
 	margin-bottom: 160px;
 	max-width: 50%;
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 80px;
+		max-width: 100%;
+	}
 }
 
 .copy-columns {
